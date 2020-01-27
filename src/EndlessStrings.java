@@ -1,28 +1,23 @@
+
+
 import java.util.Scanner;
 
 public class EndlessStrings {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+       Scanner keyboard = new Scanner(System.in);
 
-        String userAnswer = ("Do you like Ham Sandwiches? (y/n) ?");
+       String userInput;
 
-        userAnswer = keyboard.next();
+        userInput = keyboard.nextLine();
 
-        {
-            if (userAnswer.equals("y")) {
-            }
-            System.out.println("Me too!");
+        while (!userInput.equals("")) {
+           System.out.println(userInput);
+            System.out.println("Enter a character: ");
+            userInput = keyboard.nextLine();
         }
 
-        {
-            else if (userAnswer.equals("n"))
-            System.out.println("That's okay, many other foods exist!");
-        }
 
     }
 }
-
-
-
